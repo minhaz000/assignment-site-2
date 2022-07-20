@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive; 
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.text-left{
+    text-align: left;
+}
+.row {
+    display: flex;
+}
+
+.col-1 {
+    width: 100%;
+}
+.col-2 {
+    width: 50%;
+}
+
+.container {
+    width: 90%;
+   margin: auto;
+
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.ml-40{
+    margin-left: 40px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.display-inline{
+    display: flex;
+}
+
+
+.hero {
+
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+
+
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin-left: 50px;
+    margin-top: 80px;
+
+}
+
+.hero p {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.hero i {
+    margin-left: 10px;
+}
+
+.btn {
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+.watch-btn {
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-right: 18px;
+    background-color: red;
+    color: #fff;
+    font-weight: 1000;
+    border: 0 solid #fff;
+    border-radius: 5px;
+}
+
+.watch-btn:hover {
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+}
+.view-btn{
+    display: none;
+}
+.slider-img:hover{
+    cursor: pointer;
+    transform: scale(1.1)  translate(-10px);
+    transition: all 0.7s;
+}
+
+.grid-row {
+    display: grid;
+    
+}
+
+.grid-col-2 {
+    grid-template-columns: 200px auto;
+    
+
+
+}
+
+.grid-col-3 {
+    /* grid-gap: 50px; */
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+.navigation{
+    background-color: #000;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column ;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+
+    
+}
+.nav-btn{
+    width: 90%;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:10px 0px 10px 0px;
+    border: 0.5px solid gray;
+}
+.grid-item {
+    padding: 5px 0px 0px 0px;
+    
+ 
+ }
+ .card{
+    height: 150px;
+    border: 1px solid #80808038;
+    margin-left: 10px;
+ }
+ .index-card{
+    height: 310px !important;
+   
+ }
+.vs-text{
+    display: inline-block;
+    font-weight: 1000;
+    position:relative;
+    top: -10px;
+
+}
+
+.footer{
+    margin-top: 80px;
+    height: auto;
+    font-size: 23px;
+   background-color: #000;
+   color: #ddd;
+   text-align: center;
+   padding-bottom: 20px;
+  
+
+
+}
+.footer h1{
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #ddd ;
+   margin: auto;
+
+}
+.footerNav li {
+   
+    display: inline;
+    margin-left: 20px;
+
+}
+.socialNav li {
+   
+    display: inline;
+    color: #fff;
+
+}
+.socialNav a {
+   
+    color: #fff;
+
+}
+.footerNav li a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+   
+
+}
+.footerNav li i {
+    position: relative;
+    top: 5px;
+    margin-left: 30px;
+}
+.transfer-btn{
+    text-align: left !important;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 25px 10px 25px;
+}
+/* ========== Tablet veiw============================================================================== */
+
+@media screen and (min-width: 577px) and (max-width:850px) {
+    .grid-col-3 {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .watch-btn{
+       padding-right: 10px;
+    }
+    .grid-col-2 {
+        grid-template-columns:  auto;
+        
+    
+    
+    }
+    .navigation{
+        background-color: #fff;
+        flex-direction: row;
+        
+    }
+    .navigation button {
+        margin-left: 20px;
+    }
+    .view-btn{
+        display: block;
+        margin: auto;
+        padding:10px 25px 10px 25px ;
+        margin-top: 30px;
+        font-weight: 900;
+        color: #fff;
+        background-color: red;
+        border: 0px solid #fff ;
+        border-radius: 10px;
+        font-size: 20px ;
+
+    }
+   
+
+}
+
+/* ========== Mobile veiw============================================================================== */
+
+@media screen and (max-width:576px) {
+    *{text-align: center;}
+    .grid-col-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .row{
+        display: block;
+    }
+    .col-2 {
+        width: 100%;
+        padding-top: 5px;
+    }
+    .slider-img {
+       margin: auto !important;
+       text-align: center;
+       margin-top: 20px !important;
+      
+    }
+    .grid-row {
+        display: block;
+    }
+    .navigation{
+        background-color: #fff;
+    }
+    .hero h1 {
+        margin-left: 0px !important;
+    }
+    .footerNav li {
+   
+        display: block;
+        margin-bottom: 10px;
+    
+    }
+    .footer {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+}
